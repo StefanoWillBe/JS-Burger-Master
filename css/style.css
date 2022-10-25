@@ -1,0 +1,132 @@
+/*RESET*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*COMMON*/
+body {
+	background-color: beige;
+}
+
+/*WRAPPER*/
+.wrapper {
+	max-width: 50vw;
+	height: calc(100vh - 70px - 120px);
+	background-color: white;
+	overflow-y: hidden;
+}
+
+/*Title*/
+.title {
+	background-color: orange;
+	padding: 50px 10px 20px;
+	width: 50vw;
+	height: 120px;
+}
+
+/*Container*/
+.container {
+	height: 100%;
+}
+.content {
+	padding: 20px;
+	height: 100%;
+	overflow-y: auto;
+}
+.content input,
+.content input:focus {
+	border: 0;
+	border-radius: 10px;
+	background-color: rgb(253, 246, 246);
+	outline: 0;
+}
+
+/*Burger Name*/
+.name-burger label {
+	visibility: hidden;
+	display: block;
+}
+.name-burger #burger-name {
+	font-size: 30px;
+	color: grey;
+	padding: 5px;
+}
+
+/*Addon Content*/
+.label-top {
+	margin-top: 20px;
+}
+.content-addon {
+	display: flex;
+}
+.content-addon img {
+	width: 20%;
+}
+
+/*Left Column*/
+.left-column,
+.right-column {
+	width: 50%;
+}
+.row {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+	padding: 10px 0;
+}
+.row span {
+	margin: 0 20px;
+}
+
+/*Discount Code*/
+.discount-code {
+	margin-top: 20px;
+	display: flex;
+}
+.discount-code label {
+	width: 40%;
+	margin-right: 5px;
+	align-self: center;
+}
+.discount-code input {
+	width: 100%;
+	font-size: 15px;
+	background-color: beige;
+	padding: 5px 10px;
+}
+
+/*Button Calculate*/
+.button-generate {
+	text-align: center;
+	margin-top: 20px;
+}
+.button-generate button {
+	padding: 10px 20px;
+	border-radius: 5px;
+	background-color: orange;
+}
+
+/*Footer*/
+footer .footer {
+	background-color: red;
+	display: flex;
+	height: 70px;
+	max-width: 50vw;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.text-price,
+.price {
+	color: white;
+	padding: 0 20px;
+	font-weight: 500;
+	font-size: 25px;
+}
+
+.price::after {
+	content: "$";
+	margin-left: 5px;
+}

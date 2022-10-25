@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>L'Hamburger più costoso al mondo</title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<!--Title-->
+		<div class="title">
+			<h1>Create Your Burger</h1>
+		</div>
+		<!--End Title-->
+		<!--Wrapper-->
+		<div class="wrapper">
+			<!--Content-->
+			<div class="container">
+				<div class="content">
+					<!--Burger Name-->
+					<div class="name-burger">
+						<label for="burger-name">Inserisci il nome del Burger</label>
+						<input
+							type="text"
+							id="burger-name"
+							value=""
+							placeholder="Name Your Burger"
+						/>
+					</div>
+					<!--End Burger Name-->
+					<!--Addon Content-->
+					<div class="label-top">
+						<p>Ingredients</p>
+					</div>
+					<div class="content-addon">
+						<!--Left Column-->
+						<div class="left-column">
+							<!--row-->
+							<div class="row">
+								<img src="img/cheese.svg" alt="cheese" />
+								<span>Cheese</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="40"
+									id="cheese"
+								/>
+							</div>
+							<!--End row-->
+							<!--row-->
+							<div class="row">
+								<img src="img/fried-egg.svg" alt="Egg" />
+								<span>Egg</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="15"
+									id="egg"
+								/>
+							</div>
+							<!--End row-->
+							<!--row-->
+							<div class="row">
+								<img src="img/mustard.svg" alt="Mustard" />
+								<span>Mustard</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="5"
+									id="mustard"
+								/>
+							</div>
+							<!--End row-->
+						</div>
+						<!--Right Column-->
+						<div class="right-column">
+							<!--row-->
+							<div class="row">
+								<img src="img/tomato.svg" alt="Tomato" />
+								<span>Tomato</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="20"
+									id="tomato"
+								/>
+							</div>
+							<!--End row-->
+							<!--row-->
+							<div class="row">
+								<img src="img/lettuce.svg" alt="lettuce" />
+								<span>Lettuce</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="35"
+									id="lettuce"
+								/>
+							</div>
+							<!--End row-->
+							<!--row-->
+							<div class="row">
+								<img src="img/ketchup.svg" alt="ketchup" />
+								<span>Ketchup</span>
+								<input
+									type="checkbox"
+									class="ingredients"
+									value="5"
+									id="ketchup"
+								/>
+							</div>
+							<!--End row-->
+						</div>
+					</div>
+					<!--End Addon Content-->
+					<!--Discount Code-->
+					<div class="discount-code">
+						<label for="code-offer">Discount Coupon</label>
+						<input
+							type="text"
+							id="code-offer"
+							value=""
+							placeholder="123456798"
+						/>
+					</div>
+					<!--End Discount Code-->
+					<!--Button Calculate-->
+					<div class="button-generate">
+						<button id="calculate">Calculate</button>
+					</div>
+					<!--End Button Calculate-->
+				</div>
+			</div>
+			<!--End Content-->
+		</div>
+		<!--End Wrapper-->
+		<!--Footer-->
+		<footer>
+			<div class="footer">
+				<div class="text-price">
+					<h5>Your Price : <span id="name-of-burger"></span></h5>
+				</div>
+				<div class="price" id="price"></div>
+			</div>
+		</footer>
+		<!--End Footer-->
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+</html>
