@@ -1,37 +1,34 @@
 // devo calcolare il prezzo complessivo del burger tenendo conto dei ceckbox selezionabili
 
 // // creo la variabile per il tasto calculate
-var calculateBotton = document.getElementById("calculate");
+const calculateBottom = document.getElementById("calculate");
 
 // metto in ascolto il button calculate
-calculateBotton.addEventListener("click" ,
-    function (){
+calculateBottom.addEventListener("click" ,function (){
 
+    const nomeBurger = document.getElementById("burger-name").value;  
+
+    if( nomeBurger.length == 0 ) {
+        alert(" Inserisci il nome che vuoi dare al tuo Burger");
+    }else {
         // assegno con una variabile il prezzo base dell burger
-        var prezzoBurger = 50;
+        let prezzoBurger = 50;
 
-// devo capire quali chekbox sono selezionate e le raggruppo per class
-        var ingredientsCheck = document.getElementsByClassName("ingredients");
+        // devo capire quali chekbox sono selezionate e le raggruppo per class
+        const ingredientsCheck = document.getElementsByClassName("ingredients");
 
         for( var i = 0; i < ingredientsCheck.length; i++){
-            var addonCheked = ingredientsCheck[i];
+            let addonCheked = ingredientsCheck[i];
 
             if (addonCheked.checked){
                 prezzoBurger += parseInt(addonCheked.value);
             }
         }
-// creo un array con i codici sconto
+        // creo un array con i codici sconto
 
-        var codiciSconto = ["123" , "325", "658"];
-        var valueCoupon = document.getElementById("code-offer").value;
+        const codiciSconto = ["123" , "325", "658"];
+        const valueCoupon = document.getElementById("code-offer").value;
 
-        // for( var j = 0; j < codiciSconto.length; j++) {
-        //   var coupon = codiciSconto[j];
-        //
-        //     if(coupon == valueCoupon) {
-        //         prezzoBurger = prezzoBurger - (prezzoBurger /100 *20);
-        //     }
-        // }
 
         // // alternativa al ciclo for
         if (codiciSconto.includes(valueCoupon)){
@@ -39,7 +36,12 @@ calculateBotton.addEventListener("click" ,
         }
 
         // devo stampare il prezzo totale del burger
-        document.getElementById("name-of-burger").innerHTML = prezzoBurger.toFixed(2);
-})
+        const prezzoFinale = document.getElementById("name-of-burger");
+        prezzoFinale.innerHTML = "Il tuo " + nomeBurger + " costa " + prezzoBurger.toFixed(2) + " €";
+    }
+}); 
+    
+    
+    
 
-// var singleAddonNumber = parseInt(singleAddon);
+

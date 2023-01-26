@@ -10,7 +10,7 @@
 	<body>
 		<!--Title-->
 		<div class="title">
-			<h1>Create Your Burger</h1>
+			<h1>Crea il tuo Burger</h1>
 		</div>
 		<!--End Title-->
 		<!--Wrapper-->
@@ -20,18 +20,18 @@
 				<div class="content">
 					<!--Burger Name-->
 					<div class="name-burger">
-						<label for="burger-name">Inserisci il nome del Burger</label>
+						<label for="burger-name"></label>
 						<input
 							type="text"
 							id="burger-name"
 							value=""
-							placeholder="Name Your Burger"
+							placeholder="Dai un nome al tuo Burger"
 						/>
 					</div>
 					<!--End Burger Name-->
 					<!--Addon Content-->
 					<div class="label-top">
-						<p>Ingredients</p>
+						<p>Seleziona gli ingredienti che vuoi aggiungere</p>
 					</div>
 					<div class="content-addon">
 						<!--Left Column-->
@@ -39,37 +39,40 @@
 							<!--row-->
 							<div class="row">
 								<img src="img/cheese.svg" alt="cheese" />
-								<span>Cheese</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="40"
 									id="cheese"
 								/>
+								<span>Formaggio 40€</span>
 							</div>
 							<!--End row-->
 							<!--row-->
 							<div class="row">
 								<img src="img/fried-egg.svg" alt="Egg" />
-								<span>Egg</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="15"
 									id="egg"
 								/>
+								<span>Uova 15€</span>
 							</div>
 							<!--End row-->
 							<!--row-->
 							<div class="row">
 								<img src="img/mustard.svg" alt="Mustard" />
-								<span>Mustard</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="5"
 									id="mustard"
 								/>
+								<span>Mostarda 5€</span>
 							</div>
 							<!--End row-->
 						</div>
@@ -78,37 +81,40 @@
 							<!--row-->
 							<div class="row">
 								<img src="img/tomato.svg" alt="Tomato" />
-								<span>Tomato</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="20"
 									id="tomato"
 								/>
+								<span>Salsa pomodoro 20€</span>
 							</div>
 							<!--End row-->
 							<!--row-->
 							<div class="row">
 								<img src="img/lettuce.svg" alt="lettuce" />
-								<span>Lettuce</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="35"
 									id="lettuce"
 								/>
+								<span>Lattuga 35€</span>
 							</div>
 							<!--End row-->
 							<!--row-->
 							<div class="row">
 								<img src="img/ketchup.svg" alt="ketchup" />
-								<span>Ketchup</span>
+								
 								<input
 									type="checkbox"
 									class="ingredients"
 									value="5"
 									id="ketchup"
 								/>
+								<span>Ketchup 5€</span>
 							</div>
 							<!--End row-->
 						</div>
@@ -116,18 +122,18 @@
 					<!--End Addon Content-->
 					<!--Discount Code-->
 					<div class="discount-code">
-						<label for="code-offer">Discount Coupon</label>
+						<label for="code-offer">Coupon Sconto:</label>
 						<input
 							type="text"
 							id="code-offer"
 							value=""
-							placeholder="123456798"
+							placeholder="Utilizza il tuo codice sconto qui"
 						/>
 					</div>
 					<!--End Discount Code-->
 					<!--Button Calculate-->
 					<div class="button-generate">
-						<button id="calculate">Calculate</button>
+						<button id="calculate">Prezzo del Burgers </button>
 					</div>
 					<!--End Button Calculate-->
 				</div>
@@ -139,7 +145,7 @@
 		<footer>
 			<div class="footer">
 				<div class="text-price">
-					<h5>Your Price : <span id="name-of-burger"></span></h5>
+					<h5>Totale : <span id="name-of-burger"></span></h5>
 				</div>
 				<div class="price" id="price"></div>
 			</div>
